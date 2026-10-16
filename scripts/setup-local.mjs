@@ -1,0 +1,2 @@
+import { access, writeFile } from 'node:fs/promises';import {randomBytes} from 'node:crypto';
+try{await access('.env.local');}catch{await writeFile('.env.local',`SESSION_KEY=${randomBytes(48).toString('base64url')}\nPUBLIC_ORIGIN=https://pwa-insta-pi.vercel.app\n`,{mode:0o600});console.log('Created local session encryption configuration. Configure the same key on Vercel before using transfer links.');}

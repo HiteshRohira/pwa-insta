@@ -1,0 +1,12 @@
+import { readdir, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+const assets = (await readdir('dist/assets')).map(f=>'/assets/'+f);
+const images = ['coast','mountain','cafe','architecture','forest','flowers','sea','portrait','avatar-maya','avatar-noah','avatar-olivia','avatar-zara'].map(x=>'/media/'+x+'.jpg');
+const shell=['/','/index.html','/instagram-icon-192.png','/instagram-icon-512.png','/instagram-apple-touch-icon.png','/manifest.webmanifest','/instagram-wordmark.svg',...assets];
+const version=createHash('sha256').update(assets.join(',')).digest('hex').slice(0,12);
+await writeFile('dist/sw.js',`const CACHE='still-shell-${version}';const FILES=${JSON.stringify(shell)};
+self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)).then(()=>self.skipWaiting())));
+self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('still-shell-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
+self.addEventListener('fetch',event=>{const request=event.request;const url=new URL(request.url);if(request.method!=='GET'||url.origin!==self.location.origin||url.pathname.startsWith('/api/')||url.pathname.endsWith('.mp4'))return;
+if(request.mode==='navigate'){event.respondWith(fetch(request).catch(()=>caches.match('/index.html')));return;}event.respondWith(caches.match(request).then(cached=>cached||fetch(request)));});
+`);

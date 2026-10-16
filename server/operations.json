@@ -1,0 +1,367 @@
+{
+  "PolarisSearchBoxContainerQuery": {
+    "id": "28034859679513798",
+    "arguments": [
+      "data",
+      "hasQuery",
+      "query"
+    ],
+    "fields": [
+      "xdt_api__v1__fbsearch__topsearch_connection",
+      "xdt_api__v1__fbsearch__non_profiled_serp"
+    ]
+  },
+  "PolarisSearchBoxNonProfiledRefetchableQuery": {
+    "id": "27634848489527274",
+    "arguments": [
+      "hasQuery",
+      "query"
+    ],
+    "fields": [
+      "xdt_api__v1__fbsearch__non_profiled_serp"
+    ]
+  },
+  "PolarisSearchBoxRefetchableQuery": {
+    "id": "27706427925724183",
+    "arguments": [
+      "data",
+      "hasQuery"
+    ],
+    "fields": [
+      "xdt_api__v1__fbsearch__topsearch_connection"
+    ]
+  },
+  "PolarisSearchNullStateQuery": {
+    "id": "38466302779627407",
+    "arguments": [],
+    "fields": []
+  },
+  "PolarisClipsTabRootPaginationQuery": {
+    "id": "28793368806940743",
+    "arguments": [
+      "after",
+      "before",
+      "data",
+      "first",
+      "last",
+      "__relay_internal__pv__PolarisReelsRecoDebugOverlayEnabledrelayprovider",
+      "__relay_internal__pv__PolarisShortDramaEnabledrelayprovider"
+    ],
+    "fields": [
+      "xdt_api__v1__clips__home__connection_v2"
+    ]
+  },
+  "PolarisClipsTabNonProfiledPaginationQuery": {
+    "id": "28738055825791029",
+    "arguments": [
+      "after",
+      "before",
+      "data",
+      "first",
+      "last",
+      "__relay_internal__pv__PolarisReelsRecoDebugOverlayEnabledrelayprovider",
+      "__relay_internal__pv__PolarisShortDramaEnabledrelayprovider"
+    ],
+    "fields": [
+      "xdt_api__v1__clips__connected__connection_v2"
+    ]
+  },
+  "PolarisClipsHomeNonProfiledQuery": {
+    "arguments": [
+      "after",
+      "before",
+      "data",
+      "first",
+      "last",
+      "__relay_internal__pv__PolarisReelsRecoDebugOverlayEnabledrelayprovider",
+      "__relay_internal__pv__PolarisShortDramaEnabledrelayprovider"
+    ],
+    "fields": [
+      "xdt_api__v1__clips__connected__connection_v2"
+    ],
+    "id": "28530945076586923"
+  },
+  "PolarisClipsHomeRootQuery": {
+    "arguments": [
+      "after",
+      "before",
+      "data",
+      "first",
+      "last",
+      "__relay_internal__pv__PolarisReelsRecoDebugOverlayEnabledrelayprovider",
+      "__relay_internal__pv__PolarisShortDramaEnabledrelayprovider"
+    ],
+    "fields": [
+      "xdt_api__v1__clips__home__connection_v2"
+    ],
+    "id": "28486212121072261"
+  },
+  "PolarisProfilePageContentQuery": {
+    "arguments": [
+      "enable_integrity_filters",
+      "id",
+      "__relay_internal__pv__PolarisCannesGuardianExperienceEnabledrelayprovider",
+      "__relay_internal__pv__PolarisCASB976ProfileEnabledrelayprovider",
+      "__relay_internal__pv__PolarisWebSchoolsEnabledrelayprovider",
+      "__relay_internal__pv__PolarisRepostsConsumptionEnabledrelayprovider",
+      "__relay_internal__pv__PolarisShortDramaEnabledrelayprovider"
+    ],
+    "fields": [
+      "xdt_viewer"
+    ],
+    "id": "28036671149327607"
+  },
+  "PolarisProfilePostsQuery": {
+    "arguments": [
+      "after",
+      "before",
+      "data",
+      "first",
+      "last",
+      "username",
+      "__relay_internal__pv__PolarisMultiCaptionCarouselEnabledrelayprovider",
+      "__relay_internal__pv__PolarisShortDramaEnabledrelayprovider",
+      "__relay_internal__pv__PolarisReelsRecoDebugOverlayEnabledrelayprovider"
+    ],
+    "fields": [
+      "xdt_api__v1__feed__user_timeline_graphql_connection",
+      "xdt_viewer"
+    ],
+    "id": "28542612348729311"
+  },
+  "PolarisProfilePostsTabContentQuery_connection": {
+    "id": "28142289515441884",
+    "arguments": [
+      "after",
+      "before",
+      "data",
+      "first",
+      "include_multi_captions",
+      "last",
+      "username",
+      "__relay_internal__pv__PolarisMultiCaptionCarouselEnabledrelayprovider",
+      "__relay_internal__pv__PolarisShortDramaEnabledrelayprovider",
+      "__relay_internal__pv__PolarisReelsRecoDebugOverlayEnabledrelayprovider"
+    ],
+    "fields": [
+      "xdt_api__v1__feed__user_timeline_graphql_connection",
+      "xdt_viewer"
+    ]
+  },
+  "PolarisProfileStoryHighlightsTrayContentQuery": {
+    "arguments": [
+      "after",
+      "before",
+      "first",
+      "last",
+      "max_highlights_to_fetch_on_pagination",
+      "user_id"
+    ],
+    "fields": [
+      "xdt_api__v1__user_id__paginated_highlights_tray_connection"
+    ],
+    "id": "26970053832668570"
+  },
+  "PolarisFeedRootPaginationCachedQuery_subscribe": {
+    "id": "28504034265943668",
+    "arguments": [
+      "after",
+      "before",
+      "data",
+      "first",
+      "last",
+      "variant",
+      "__relay_internal__pv__PolarisShortDramaEnabledrelayprovider",
+      "__relay_internal__pv__PolarisMultiCaptionCarouselEnabledrelayprovider",
+      "__relay_internal__pv__PolarisReelsRecoDebugOverlayEnabledrelayprovider",
+      "__relay_internal__pv__PolarisAdDebugToolEnabledrelayprovider",
+      "__relay_internal__pv__PolarisSuggestedUserFeedUnitCardsEnabledrelayprovider"
+    ],
+    "fields": [
+      "xdt_api__v1__feed__timeline__connection"
+    ]
+  },
+  "PolarisFeedTimelineFragmentCachedQuery_items_connection": {
+    "arguments": [],
+    "fields": []
+  },
+  "PolarisFeedTimelineFragmentCachedQuery": {},
+  "PolarisStoriesV3TrayContainerQuery": {
+    "arguments": [
+      "data",
+      "suggestedUsersData"
+    ],
+    "fields": [
+      "xdt_api__v1__feed__reels_tray",
+      "xdt_viewer",
+      "xdt_api__v1__ayml__strict"
+    ],
+    "id": "27703822975903310"
+  },
+  "PolarisProfileNavItemBadgeQuery": {
+    "id": "29153614944227977",
+    "arguments": [],
+    "fields": [
+      "xdt_text_app_notification_badge_for_ig"
+    ]
+  },
+  "PolarisActivityFeedStoriesQueryLastCheckedTimestampContext": {},
+  "PolarisExploreLocationsContainerQuery": {
+    "arguments": [
+      "location_id_str",
+      "show_nearby"
+    ],
+    "fields": [
+      "xdt_location_get_web_info"
+    ],
+    "id": "28572807415659320"
+  },
+  "PolarisClipsDesktopCommentsPopoverQuery": {
+    "id": "25562760820067055"
+  },
+  "PolarisFeedTimelineRootV2Query$Parameters": {},
+  "PolarisStoriesV3TrayContainerQuery$Parameters": {},
+  "PolarisProfileOwnOptionsDialogQuery": {
+    "id": "28507740242213201"
+  },
+  "PolarisProfileOwnOptionsDialogQuery$Parameters": {},
+  "PolarisProfileOwnOptionsDialogViewerQuery": {
+    "id": "35378252388486250"
+  },
+  "PolarisProfileOwnOptionsDialogViewerQuery$Parameters": {},
+  "PolarisProfileSuggestedUsersWithPreloadableQuery": {
+    "arguments": [
+      "module",
+      "target_id"
+    ],
+    "fields": [
+      "xdt_api__v1__discover__chaining"
+    ],
+    "id": "27929823133325729"
+  },
+  "PolarisFeedTimelineRootV2Query": {
+    "id": "38857189510595779",
+    "arguments": [
+      "after",
+      "before",
+      "data",
+      "first",
+      "last",
+      "variant",
+      "__relay_internal__pv__PolarisShortDramaEnabledrelayprovider",
+      "__relay_internal__pv__PolarisMultiCaptionCarouselEnabledrelayprovider",
+      "__relay_internal__pv__PolarisReelsRecoDebugOverlayEnabledrelayprovider",
+      "__relay_internal__pv__PolarisAdDebugToolEnabledrelayprovider",
+      "__relay_internal__pv__PolarisSuggestedUserFeedUnitCardsEnabledrelayprovider"
+    ],
+    "fields": [
+      "xdt_api__v1__feed__timeline__connection"
+    ]
+  },
+  "PolarisNuxSuggestedUserStepSearchRefetchQuery": {
+    "id": "27002226686121648",
+    "arguments": [
+      "query"
+    ],
+    "fields": [
+      "xdt_api__v1__fbsearch__topsearch_connection"
+    ]
+  },
+  "PolarisNuxSuggestedUserStepSearchUsersQuery": {
+    "id": "37197739216538891",
+    "arguments": [
+      "query"
+    ],
+    "fields": [
+      "xdt_api__v1__fbsearch__topsearch_connection"
+    ]
+  },
+  "PolarisActivityFeedStoriesQueryCacheIDContext": {},
+  "PolarisActivityFeedStoriesViewQuery": {
+    "arguments": [
+      "inbox_request_data",
+      "mark_as_seen",
+      "pending_request_data"
+    ],
+    "fields": [
+      "xdt_activity_inbox",
+      "xdt_api__v1__friendships__pending"
+    ],
+    "id": "28994854000203641"
+  },
+  "PolarisActivityFeedStoryBloksScreenQuery.react": {},
+  "PolarisActivityFeedFollowRequestsViewQuery": {
+    "id": "39878881198377329"
+  },
+  "PolarisActivityFeedFollowRequestsViewQuery$Parameters": {},
+  "PolarisStoriesV3TranslationDialogRootQuery": {
+    "id": "27881691264759865"
+  },
+  "PolarisImmersiveFeedPostModalChainedClipsQuery": {
+    "id": "28723067704028042",
+    "arguments": [
+      "after",
+      "before",
+      "data",
+      "first",
+      "last",
+      "__relay_internal__pv__PolarisReelsRecoDebugOverlayEnabledrelayprovider",
+      "__relay_internal__pv__PolarisShortDramaEnabledrelayprovider"
+    ],
+    "fields": [
+      "xdt_api__v1__clips__home__connection_v2"
+    ]
+  },
+  "PolarisStoriesV3ReelPageGalleryQuery": {
+    "id": "29306733562261201"
+  },
+  "PolarisStoriesV3ReelPageGalleryQuery$Parameters": {},
+  "PolarisStoriesV3ReelPageStandaloneQuery": {
+    "id": "28449850404637481",
+    "arguments": [
+      "is_highlight",
+      "media_id",
+      "reel_ids_arr",
+      "__relay_internal__pv__PolarisCommunityNoteStoriesLabelEnabledrelayprovider"
+    ],
+    "fields": [
+      "xdt_api__v1__feed__reels_media",
+      "xdt_viewer"
+    ]
+  },
+  "PolarisStoriesV3ReelPageStandaloneQuery$Parameters": {},
+  "PolarisFeedQueryConstants": {},
+  "PolarisAPICheckNewFeedPostsExistQuery": {
+    "id": "29095516470048516",
+    "arguments": [],
+    "fields": [
+      "xdt_api__v1__new_feed_posts_exist"
+    ]
+  },
+  "PolarisActivityFeedStoriesViewQuery$Parameters": {},
+  "PolarisPostCommentsPaginationQuery": {
+    "id": "28428885330094742",
+    "arguments": [
+      "after",
+      "before",
+      "first",
+      "last",
+      "media_id",
+      "sort_order",
+      "__relay_internal__pv__PolarisIsLoggedInrelayprovider"
+    ]
+  },
+  "PolarisPostChildCommentsQuery": {
+    "id": "28027289793632076",
+    "arguments": [
+      "after",
+      "before",
+      "media_id",
+      "parent_comment_id",
+      "is_chronological",
+      "first",
+      "last",
+      "__relay_internal__pv__PolarisIsLoggedInrelayprovider"
+    ]
+  }
+}

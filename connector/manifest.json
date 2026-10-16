@@ -1,0 +1,1 @@
+{"manifest_version":3,"name":"Still · local Instagram connector","version":"0.1.0","description":"Connect your signed-in Instagram session to Still on localhost. No password or persistent cookie storage.","permissions":["cookies"],"host_permissions":["https://*.instagram.com/*","http://localhost:4310/*"],"action":{"default_popup":"popup.html"}}

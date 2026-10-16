@@ -1,0 +1,44 @@
+{
+  "name": "pwa-insta",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=.env.local server/index.mjs",
+    "build": "tsc --noEmit && vite build && node scripts/build-pwa.mjs",
+    "start": "NODE_ENV=production node --env-file=.env.local server/index.mjs",
+    "test": "node --test server/*.test.mjs",
+    "test:ui": "node scripts/check-ui.mjs",
+    "predev": "node scripts/setup-local.mjs",
+    "deploy": "vercel deploy --prod --yes --scope hiteshrohiras-projects",
+    "test:ui:preload": "node scripts/check-preload-ui.mjs",
+    "test:ui:login": "node scripts/check-login-ui.mjs",
+    "test:ui:interactions": "node scripts/check-interactions-ui.mjs",
+    "test:ui:reel-recovery": "node scripts/check-reel-recovery-ui.mjs",
+    "test:ui:explore-layout": "node scripts/check-explore-layout-ui.mjs",
+    "test:ui:parity": "node scripts/check-mobile-parity-ui.mjs",
+    "test:ui:webkit": "UI_ENGINE=webkit node scripts/check-mobile-parity-ui.mjs",
+    "test:ui:reel-audio": "node scripts/check-reel-audio-ui.mjs"
+  },
+  "dependencies": {
+    "@soundtouchjs/core": "^2.1.1",
+    "@sparticuz/chromium": "^153.0.0",
+    "express": "^5.1.0",
+    "libsodium-wrappers": "^0.8.4",
+    "lucide-react": "^0.468.0",
+    "motion": "^12.23.12",
+    "puppeteer-core": "^25.13.0",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/libsodium-wrappers": "^0.7.14",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.1",
+    "@vitejs/plugin-react": "^5.0.2",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.0"
+  }
+}

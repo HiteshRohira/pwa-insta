@@ -1,0 +1,1 @@
+Local source snapshot of Hitesh’s pwacn at commit 45a18aa378a76051ecdfb4de879a47e14f22713e. Source path: /Users/hitesh/projects/pwacn/packages/{core,react}/src. Test files excluded. Imported through Vite/TypeScript aliases; no npm package substitution. App-specific changes are documented in docs/PWACN-GAPS.md. The original framework checkout is unchanged.
