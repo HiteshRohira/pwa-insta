@@ -15,7 +15,5 @@ const list=[...urls];
 for(let i=0;i<list.length;i+=6){await Promise.all(list.slice(i,i+6).map(async u=>{try{const code=await fetch(u,{signal:AbortSignal.timeout(15000)}).then(r=>r.text());for(const m of code.matchAll(/__d\("(IGDS[^" ]*Icon.react)"/g)){const end=code.indexOf('__d(',m.index+4);extract(m[1],code.slice(m.index,end<0?undefined:end));}}catch{}}));}
 await writeFile('src/instagram-icons.json',JSON.stringify(glyphs)+'\n');
 console.log('Official Instagram glyphs:',Object.keys(glyphs).filter(n=>/Heart|Comment|Save|Bookmark|Play|Pause|Volume|Sound|Repost|Reel|Home|Grid|Verify|Verified/.test(n)));
-const manifest=await fetch('https://www.instagram.com/data/manifest.json').then(r=>r.json());
-console.log('Official icon sizes:',manifest.icons?.map(i=>i.sizes));
-const icon=[...(manifest.icons || [])].sort((a,b)=>parseInt(b.sizes)-parseInt(a.sizes))[0];
-if(icon){const assetUrl=new URL(icon.src,'https://www.instagram.com/');const r=await fetch(assetUrl);if(r.ok){await writeFile('public/instagram-app-icon.png',Buffer.from(await r.arrayBuffer()));console.log('Saved official app icon:',icon.sizes);}}
+// Preserve the dark install artwork when refreshing in-app glyphs.
+await import('./build-icons.mjs');
